@@ -99,7 +99,7 @@ RUN set -eux; \
 	for url in $TOMCAT_ASC_URLS; do \
 		if wget -O tomcat.tar.gz.asc "$url"; then \
 			success=1; \
-			break; \
+			break; \ 
 		fi; \
 	done; \
 	[ -n "$success" ]; \
@@ -178,3 +178,4 @@ RUN cp -R /tmp/*.war /usr/local/tomcat/webapps/myapp.war
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
+#########
