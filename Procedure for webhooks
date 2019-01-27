@@ -1,0 +1,2 @@
+1. create a access token from github setiing on devloper..once created
+2. configure in jenkins configuration add gitserver - with secret key credentials.
