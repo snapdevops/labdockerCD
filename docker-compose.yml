@@ -3,8 +3,6 @@ services:
   sonarqube:
     build:
       context: sonarqube/
-      labels:
-        server: myserver
     ports:
       - 9001:9001
       - 9093:9093
@@ -12,8 +10,6 @@ services:
   jenkins:
     build:
       context: jenkins/
-      labels:
-        server: myserver
     privileged: true
     user: root
     ports:
