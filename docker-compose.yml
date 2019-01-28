@@ -2,7 +2,7 @@ version: '2.0'
 services:
   sonarqube:
     build:
-      context: sonarqubes/
+      context: sonarqube/
     ports:
       - 9001:9001
       - 9093:9093
