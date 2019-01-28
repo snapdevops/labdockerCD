@@ -2,7 +2,7 @@ version: '2.0'
 services:
   sonarqube:
     build:
-      context: sonarqube/
+      context: projectAsonarqube/
     ports:
       - 9001:9001
       - 9093:9093
@@ -15,7 +15,7 @@ services:
     ports:
       - 8081:8081
       - 50001:50001
-    container_name: jenkinss
+    container_name: projectAjenkins
     volumes:
       - /tmp/jenkins:/var/jenkins_home #Remember that, the tmp directory is designed to be wiped on system reboot.
       - /var/run/docker.sock:/var/run/docker.sock
